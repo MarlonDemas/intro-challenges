@@ -48,6 +48,21 @@
             </div>
             <div class="column">
                 <h2 class="title is-2">Task 3</h2>
+
+                <?php
+                    $dillon = array('height' => 184, 'age' => 19, 'shoe size' => 9);
+                    $cyle = array('height' => 162, 'age' => 16, 'shoe size' => 6);
+                    $class = array();
+                    array_push($class, $marlon, $dillon, $cyle);
+                    echo 'This is the height of the first person: <strong>' . $class[0]['height'] . ' cm</strong>,<br>';
+                    echo  'This is the age of the second person: <strong>' . $class[1]['age'] . ' years old</strong>,<br>';
+                    echo  'and this is the shoe size of the third person: <strong>size ' . $class[2]['shoe size'] . '</strong><br><br>';
+                    $sbu = array('height' => 177, 'age' => 20, 'shoe size' => 7);
+                    array_unshift($class, $sbu);
+                    echo 'The height of the new person is ' . $class[0]['height'] . ' cm,<br>';
+                    echo  'The age of the new person is ' . $class[0]['age'] . ' years old,<br>';
+                    echo  'and the shoe size of the new person is size ' . $class[0]['shoe size'] . '.<br><br>';
+                ?>
             </div>
         </div>
     </div>
