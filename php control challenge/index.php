@@ -10,10 +10,11 @@
  <body>
  <div class="container">
         <h1 class="title is-1" style="text-align: center">PHP Arrays Challenge</h1>
+        <hr>
+        <a href="index.php" class="button is-light" style="margin-bottom: 20px; display: flex; align-items: center">Refresh Page</a>
         <div class="columns">
             <div class="column">
                 <h2 id="now" class="title is-2">Challenge 1</h2>
-                <a href="index.php" class="button is-dark" style="margin-bottom: 20px">Change robot color</a>
                 <?php
                     $light = array('green','red','yellow','blue');
                     switch ($light[rand(0,3)]) {
@@ -39,21 +40,30 @@
             <div class="column">
                 <h2 class="title is-2">Challenge 2</h2>
                 
+                <p class="title is-3">Amusement Park Entry:</p>
+                <p class="title is-4">Welcome to Voicemail, how old are you?</p>
+
                 <?php 
 
-                    $child = 5;
+                    $customer = rand(0,100);
 
-                    if ($child < 2) {
+                    if ($customer < 2) {
+                        echo '<strong>Customer:</strong> I are ' . $customer . ' years old.<br>';
                         echo 'Yay, you get to go in for free!';
-                    } else if($child <= 12) {
+                    } else if($customer <= 12) {
+                        echo '<strong>Customer:</strong> I are ' . $customer . ' years old.<br>';
                         echo 'You need to pay R20 to enter';
-                    } else if($child <= 17) {
+                    } else if($customer <= 17) {
+                        echo '<strong>Customer:</strong> I are ' . $customer . ' years old.<br>';
                         echo 'You need to pay R30 to enter';
-                    } else if($child <= 25) {
+                    } else if($customer <= 25) {
+                        echo '<strong>Customer:</strong> I are ' . $customer . ' years old.<br>';
                         echo 'You need to pay R40 to enter';
-                    } else if($child <= 64) {
+                    } else if($customer <= 64) {
+                        echo '<strong>Customer:</strong> I are ' . $customer . ' years old.<br>';
                         echo 'You need to pay R60 to enter';
                     } else {
+                        echo '<strong>Customer:</strong> I are ' . $customer . ' years old.<br>';
                         echo 'You need to pay R30 to enter';
                     }
                         
