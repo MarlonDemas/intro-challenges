@@ -8,7 +8,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css"/>
     </head>
     <body>
+    <h1 class="title is-1 has-text-centered">PHP Loop Challenge</h1>
+    <hr>
         <section class="section">
+        <h2 class="title is-2">Challenge 1</h2>
         <?php
             for ($i=1; $i < 11; $i++) { 
                 echo  '<div class="box has-text-centered">'."$i bean<br>".'</div>';
