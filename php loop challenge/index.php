@@ -14,8 +14,17 @@
         <h2 class="title is-2">Challenge 1</h2>
         <?php
             for ($i=1; $i < 11; $i++) { 
-                echo  '<div class="box has-text-centered">'."$i bean<br>".'</div>';
+                echo "$i bean<br>";
             }
+        ?>
+        </section>
+        <section class="section">
+        <h2 class="title is-2">Challenge 2</h2>
+        <?php
+            $names = array('Marlon', 'Miguel', 'Urick', 'Evan', 'Jesse');
+            $hair = array('black', 'brown', 'red', 'blue', 'purple');
+            $age = array(21, 24, 25, 19, 22);
+            $height = array(1.54, 1.38, 1.45, 1.52, 1.41);
         ?>
         </section>
     </body>
