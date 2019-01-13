@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Title Page</title>
+        <title>Loop Challenge</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css"/>
     </head>
     <body>
@@ -25,6 +25,10 @@
             $hair = array('black', 'brown', 'red', 'blue', 'purple');
             $age = array(21, 24, 25, 19, 22);
             $height = array(1.54, 1.38, 1.45, 1.52, 1.41);
+
+            for($i = 0; $i < count($names); $i++){
+                echo $names[$i] . ' has ' . $hair[$i] . " hair, is " . $age[$i] . " years old and is " . $height[$i] . " meters tall. </br>";
+            }
         ?>
         </section>
     </body>
